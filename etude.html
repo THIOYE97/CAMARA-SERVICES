@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services d'Étude - CamaraServices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #D8EBF7; /* Bleu ciel */
+    }
+    #logo {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="relative flex flex-col items-center justify-center min-h-screen text-center">
+
+  <!-- Bouton de retour -->
+  <button onclick="history.back()" class="absolute top-4 left-4 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-full p-2 shadow-lg">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <!-- Contenu principal -->
+  <img id="logo" src="./logo1.png" alt="Logo CamaraServices" class="w-24 mb-8">
+  <h1 class="text-3xl font-bold text-gray-800 mb-4">Avez-vous besoin de nos services d'étude ?</h1>
+  <a href="mailto:contact@camara-services.com" class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-orange-600">
+    Contactez-nous
+  </a>
+
+</body>
+</html>
