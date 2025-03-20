@@ -1,0 +1,3 @@
+submodule "CamaraService"]
+    path = CamaraService
+    url = https://github.com/THIOYE97/CAMARA-SERVICES.git
